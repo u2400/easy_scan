@@ -1,0 +1,6 @@
+node_modules/*
+*.js
+!webpack.config.js
+!easyscan.js
+.DS_Store
+.vscode/settings.json

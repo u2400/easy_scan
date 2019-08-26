@@ -1,0 +1,17 @@
+{
+    "compilerOptions": {
+        "outDir": "./dist/",
+        "noImplicitAny": true,
+        "module": "es2015",
+        "target": "es6",
+        "noUnusedLocals": true,
+        "moduleResolution": "node",
+        "noUnusedParameters": true,
+        "inlineSources": false,
+        "allowJs": true
+    },
+    "exclude": [
+        "node_modules",
+        "**/*.spec.ts"
+    ]
+  }
