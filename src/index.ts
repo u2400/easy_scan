@@ -8,7 +8,7 @@ export let promise_list: Array<Promise<any>> = [];
 async function main () {
     let [start_ip, end_ip]: Array<ip_name> = await start();
     try {
-        while (ip.is_firest_bigger_then_second(end_ip, start_ip)) {
+        while (ip.is_first_bigger_then_second(end_ip, start_ip)) {
             new ip(start_ip.get_name());
             start_ip.add();
         }

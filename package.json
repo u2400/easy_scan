@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "cd ./src && tsc index.ts && node index.js"
+    "test": "cd ./src && tsc index.ts"
   },
   "author": "",
   "license": "ISC",
