@@ -73,7 +73,7 @@ class ip_base {
         return tmp;
     }
 
-    static is_firest_bigger_then_second (ip_1: ip_base, ip_2: ip_base): boolean {
+    static is_first_bigger_then_second (ip_1: ip_base, ip_2: ip_base): boolean {
         let different_class: number;
         for (let i: number = 0; i < 4; i++) {
             if(ip_1.name[i] !== ip_2.name[i]) {
