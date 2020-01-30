@@ -1,10 +1,6 @@
 import{ execSync } from 'child_process';
-export declare var debug: boolean;
-debug = true;
-
-export function sleep(ms: number) { //sleep
-    return new Promise(resolve => setTimeout(resolve, ms))
-}
+// export declare var debug: boolean;
+var debug = true;
 
 export function debug_log(arg: any) {
     if(debug) {
@@ -24,6 +20,16 @@ export function log(arg: any) {
     }
 }
 
+export function info(arg: any) {
+    if(debug) {
+        console.log("[ INFO ]", arg);
+    }
+}
+
+export function sleep(ms: number) { //sleep
+    return new Promise(resolve => setTimeout(resolve, ms))
+}
+
 export function is_ip(host: string) {
     if(/[^0-9.]/.test(host)) {
         //this is a host
@@ -32,12 +38,6 @@ export function is_ip(host: string) {
     else {
         //this is a ip
         return true;
-    }
-}
-
-export function info(arg: any) {
-    if(debug) {
-        console.log("[ INFO ]", arg);
     }
 }
 
